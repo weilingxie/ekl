@@ -13,7 +13,7 @@ William(Weiling) Xie
 ## Website URL
 
 ## Wireframe Design using Figma
-https://www.figma.com/file/gpwgIDfeUYBbABmrhcvUKGU9/AKC-Website---Desktop?node-id=0%3A1
+https://www.figma.com/file/tC94mTtkf8xMHYFYhvtf6s/EKL-Kicthen?node-id=0%3A1
 
 ## Tech
 

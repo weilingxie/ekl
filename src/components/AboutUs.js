@@ -1,47 +1,24 @@
 import React from 'react'
-const Config = require('../config.json') 
 
 const AboutUs = ()=>{
-
-
-
     return (
 
         <div id="aboutUs" className ="aboutUs">
-
             <h1 className="section-title">ABOUT US</h1>
             <div className = "aboutus-container">
-
                 <div className = "text-container">
-                    <p className = "aboutus-text"> Auckland Kendo Club isn’t just a martial arts dojo. Since 1988, our founding members have formed a tight-knit family that upholds unique values, such as:</p>
-
-                    <p className = "aboutus-text"> • Resilience </p>
-                    <p className = "aboutus-text"> • Togetherness</p>
-                    <p className = "aboutus-text"> • Continuous Improvement </p>
-                    <p className = "aboutus-text"> • Humility</p>
-
-                    <p className = "aboutus-text"> Regardless of race, age, gender or class, all of our members strive to improve themselves in both training and life. We ensure that each member receives genuine encouragement and support to realize their potential – without any egos getting in the way. </p>
-
-                    <p className = "aboutus-text"> In addition to personal development, kendo offers many opportunities. Auckland Kendo Club members have competed in national and international tournaments, trained under world-class sensei and formed lifelong friendships. These eye-opening experiences are truly remarkable. </p>
-
-                    <p className = "aboutus-text"> If you’re looking for a new challenge with other growth-minded people, then head down to Auckland Kendo Club now! It’s just a matter of intent.</p>
-
-
+                    <p className = "aboutus-text">EKL Kitchens is the leading New Zealand kitchen and cabinet manufacturer. Our mission is to provide our customers with innovative designs of high quality and competitive value. </p>
+                    <p className = "aboutus-text">EKL Kitchens is based in Auckland where we have our manufacturing operations as well as our design team. We can tailor every detail of your dream kitchen and manufacture it with the best raw materials.</p>
+                    <p className = "aboutus-text">Our factory is equipped with cutting edge CNC routers (computer-controlled cutting and shaping) and modern edging equipment. It ensures an unequalled precision in the making of your Kitchen elements and gives us more flexibility to answer your every need.</p>
+                    <p className = "aboutus-text">Our team of skilled carpenters and experienced tradesmen are available to plan and install the most complex projects within stipulated timeframes.</p>
+                    <p className = "aboutus-text">Visit our showroom and have a tour of our factories to witness the quality of our craft. Share with us your ideas and EKL will take them to the next level.</p>
                 </div>
-
                 <div className ="image-container">
-                    <img className="aboutusimage" src={`${process.env.PUBLIC_URL}/images/aboutusimage.jpg`} alt="aboutimage" />
-                    <a href={Config.membership} ><button className="aboutus-btn">TAKE ACTION!</button></a>
-                </div>
-                
+                    <img className="aboutusimage" src={`${process.env.PUBLIC_URL}/images/AboutUsImage.jpg`} alt="AboutUsImage" />                    
+                </div>                
             </div>
-
-
         </div>
-
-
     )
-
 } 
 
 export default AboutUs 

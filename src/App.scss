@@ -1,16 +1,9 @@
 /*@import "./design-tokens/scss-variables.scss";*/
 @import "./design-tokens/css-variables.scss";
-@import "./components//Header.scss";
 @import "./components/Navbar.scss";
 @import "./components/Landing.scss";
-@import "./components/UpcomingEvent.scss";
-@import "./components/Instructor.scss";
-@import "./components/Schedule.scss";
-@import "./components/Pricing.scss";
 @import "./components/AboutUs.scss";
 @import "./components/ContactUs.scss";
-@import "./components/Footer.scss";
-@import "./components/Calendar.scss";
 
 *, *::before, *::after {
     box-sizing: border-box;

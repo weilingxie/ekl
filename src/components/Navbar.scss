@@ -1,8 +1,9 @@
 @import "./design-tokens/css-variables.scss";
 
 .navbar {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
+    //background-color: var(--color-secondary);
+    padding-top: 2rem;
+    color: var(--color-additional);
     text-align: center;
     width: 100%;    
 
@@ -34,12 +35,12 @@
     }
 
 
-    .navbar-btns {               
+    .navbar-btns {
         position: absolute;
         z-index: 999;
         text-align: left;
-        background-color: var(--color-secondary);
-        color: var(--color-primary);
+        //background-color: var(--color-secondary);
+        color: var(--color-additional);
         width: 100%;
         transform: scale(1,0);
         transform-origin: top;
@@ -57,11 +58,11 @@
                 transition: opacity 150ms ease-in-out;
 
                 a {
-                    color: var(--color-primary);
+                    color: var(--color-addtional);
                     text-decoration: none;
 
                     &:hover {
-                        color: var(--color-additional);
+                        color: var(--color-primary);
                     }
                 }
             }
@@ -123,11 +124,11 @@
 
 
                     a {
-                        color: var(--color-primary);
+                        color: var(--color-additional);
                         text-decoration: none;
 
                         &:hover {
-                            color: var(--color-additional);
+                            color: var(--color-primary);
                         }
                     }
                 }
