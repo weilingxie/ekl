@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/weilingxie/ekl/static/css/main.1d85d565.chunk.css",
+    "main.js": "/weilingxie/ekl/static/js/main.3637689d.chunk.js",
+    "main.js.map": "/weilingxie/ekl/static/js/main.3637689d.chunk.js.map",
+    "runtime-main.js": "/weilingxie/ekl/static/js/runtime-main.f8194320.js",
+    "runtime-main.js.map": "/weilingxie/ekl/static/js/runtime-main.f8194320.js.map",
+    "static/js/2.953cb89a.chunk.js": "/weilingxie/ekl/static/js/2.953cb89a.chunk.js",
+    "static/js/2.953cb89a.chunk.js.map": "/weilingxie/ekl/static/js/2.953cb89a.chunk.js.map",
+    "index.html": "/weilingxie/ekl/index.html",
+    "static/css/main.1d85d565.chunk.css.map": "/weilingxie/ekl/static/css/main.1d85d565.chunk.css.map",
+    "static/js/2.953cb89a.chunk.js.LICENSE.txt": "/weilingxie/ekl/static/js/2.953cb89a.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/weilingxie/ekl/static/media/BackgroundImage.70b93696.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8194320.js",
+    "static/js/2.953cb89a.chunk.js",
+    "static/css/main.1d85d565.chunk.css",
+    "static/js/main.3637689d.chunk.js"
+  ]
+}
