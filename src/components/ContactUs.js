@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import * as emailjs from 'emailjs-com'
+import MapSection from './map/Map'
 const Config = require('../config.json') 
 
 //rfce + enter
@@ -104,11 +105,8 @@ const ContactUs = () => {
                         <div className="footer">
                             <p>Copyright © 2021 by EKL Kitchen.</p>
                         </div> 
-                    </section>
-                    
-
-                
-        </div>  
+                    </section>                                    
+                </div>  
             </div>                       
             <form className="contactUs-container">
             <div className="contactUs-form">
@@ -133,6 +131,7 @@ const ContactUs = () => {
                 </div>
                 <button onClick={e => handleSubmit(e)}>SEND</button>
             </form>
+            <MapSection zoomLevel={17} />
         </div>  
     )
 }
