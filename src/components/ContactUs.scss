@@ -83,5 +83,37 @@
                 box-shadow: inset 400px 0 0 0 var(--color-additional);
             }
         }    
-    }    
+    }
+    
+    .map {
+        width: 90%;
+        max-width: 400px;
+        height: calc(width/16*9);
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 945px) {
+    .contactUs {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin:auto;
+
+        .info-container {
+            margin-top: 0;
+            width: 30%;
+        }
+        .contactUs-container{
+            width: 30%;
+        }
+        .map{
+            width: 30%;
+            // height: 100px;
+        }
+    }
 }

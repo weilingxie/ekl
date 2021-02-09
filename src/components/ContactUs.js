@@ -109,7 +109,7 @@ const ContactUs = () => {
                 </div>  
             </div>                       
             <form className="contactUs-container">
-            <div className="contactUs-form">
+                <div className="contactUs-form">
                     <label htmlFor="contactUs-name">NAME</label>
                     <input id="contactUs-name" value={name} type="text" placeholder="" onChange={e=>setName(e.target.value)} />
                     {nameError&&<p className="contactUs-error">Please provide your name</p>}
