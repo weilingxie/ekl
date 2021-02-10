@@ -10,16 +10,16 @@ const Projects = ()=>{
                     <a className="projects-more" href="/home">More</a>
                 </div>
                 <div className="projects-image projects-image1">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/projectImage1.jpg`} alt="projectImage" />                    
+                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage1.jpg`} alt="projectImage" />                    
                 </div>
                 <div className="projects-image projects-image2">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/projectImage2.jpg`} alt="projectImage" />                    
+                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage2.jpg`} alt="projectImage" />                    
                 </div>                
                 <div className ="projects-image projects-image3">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/projectImage3.jpg`} alt="projectImage" />                    
+                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage3.jpg`} alt="projectImage" />                    
                 </div>
                 <div className="projects-image projects-image4">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/projectImage4.png`} alt="projectImage" />                    
+                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage4.png`} alt="projectImage" />                    
                 </div>
             </div>
         </div>
