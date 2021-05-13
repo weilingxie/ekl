@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../images/EKL-logo.svg'
 
 
 //rfce + enter
@@ -7,9 +8,8 @@ const Navbar = () => {
 
     return (        
           <div id="navbar" className="navbar"> 
-                <img src={`${process.env.PUBLIC_URL}/images/akc-logo-small.png`} alt="Logo" />                
-                <input type="checkbox" id="nav-toggle" className="nav-toggle"></input>
-                                           
+                {/* <img src={`${process.env.PUBLIC_URL}/images/EKL-logo.svg`} alt="Logo" />                 */}
+                {/* <img src={Logo} alt="EKL" /> */}                                                         
                 <nav className="navbar-btns">
                   <ul>
                     <li className="navbar-btn navbar-home" >

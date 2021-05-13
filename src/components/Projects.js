@@ -19,7 +19,7 @@ const Projects = ()=>{
                     <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage3.jpg`} alt="projectImage" />                    
                 </div>
                 <div className="projects-image projects-image4">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage4.png`} alt="projectImage" />                    
+                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage4.jpeg`} alt="projectImage" />                    
                 </div>
             </div>
         </div>

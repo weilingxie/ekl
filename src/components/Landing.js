@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../images/EKL-logo.svg'
 //rfce + enter
 const Landing = () => {
     
@@ -6,9 +7,7 @@ const Landing = () => {
         <div id="landing" className="landing">
             <div className="layer">
                 <div id="navbar" className="navbar"> 
-                    <img src={`${process.env.PUBLIC_URL}/images/akc-logo-small.png`} alt="Logo" />                
-                    <input type="checkbox" id="nav-toggle" className="nav-toggle"></input>
-                                            
+                    <img className="logo" src={Logo} alt="EKL" />                                                                            
                     <nav className="navbar-btns">
                         <ul>
                             <li className="navbar-btn navbar-home" >
