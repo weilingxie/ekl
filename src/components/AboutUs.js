@@ -14,7 +14,7 @@ const AboutUs = ()=>{
                     <p className = "aboutus-text">Visit our showroom and have a tour of our factories to witness the quality of our craft. Share with us your ideas and EKL will take them to the next level.</p>
                 </div>
                 <div className ="image-container">
-                    <img className="aboutusimage" src={`${process.env.PUBLIC_URL}/images/AboutUsImage.jpg`} alt="AboutUsImage" />                    
+                    <img className="aboutusimage" src={`${process.env.PUBLIC_URL}/images/AboutusImage.jpg`} alt="AboutUsImage" />                    
                 </div>                
             </div>
         </div>
