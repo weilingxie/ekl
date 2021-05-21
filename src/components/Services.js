@@ -7,10 +7,8 @@ const Services = () => {
     
     return (        
         <div id="services" className ="services">            
-            <div className = "services-container">
-                <div className ="image-container">
-                    <img className="services-image" src={`${process.env.PUBLIC_URL}/images/AboutusImage.jpg`} alt="Services" />                    
-                </div> 
+            <div className = "services-container">                
+                <img className="image-container" src={`${process.env.PUBLIC_URL}/images/AboutusImage.jpg`} alt="Services" />                    
                 <div className = "text-container">
                     <div className = "text-wrapper">
                         <h1 className="section-title">SERVICES</h1>

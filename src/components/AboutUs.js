@@ -12,9 +12,8 @@ const AboutUs = ()=>{
                     <p className = "aboutus-text">Our team of skilled carpenters and experienced tradesmen are available to plan and install the most complex projects within stipulated timeframes.</p>
                     <p className = "aboutus-text">Visit our showroom and have a tour of our factories to witness the quality of our craft. Share with us your ideas and EKL will take them to the next level.</p>
                 </div>
-                <div className ="image-container">
-                    <img className="aboutusimage" src={`${process.env.PUBLIC_URL}/images/AboutusImage.jpg`} alt="AboutUsImage" />                    
-                </div>                
+                    <img className="image-container" src={`${process.env.PUBLIC_URL}/images/AboutusImage.jpg`} alt="AboutUsImage" />                    
+              
             </div>
         </div>
     )
