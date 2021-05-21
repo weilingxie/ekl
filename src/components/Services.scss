@@ -1,0 +1,67 @@
+@import "./design-tokens/css-variables.scss";
+
+.services {
+    background: var(--color-darkgrey);
+    color: var(--color-additional);
+    display:flex;
+
+    .services-container{
+        width: 100%;
+
+        .text-container{
+            width: 100%;
+            font-size: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .text-wrapper {
+                width: 50%;
+                text-align: left;
+            }          
+        }
+    }    
+}
+
+@media screen and (min-width: 1000px) {
+.services{
+    .services-container{    
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        width: 96%;
+        // padding-bottom: 2em;
+        .text-container{
+            width: 100%;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .text-wrapper {
+                width: 50%;
+                text-align: left;
+            }          
+        }
+        .image-container{
+            width: 55%;
+
+            img{
+                width: 100%;
+                // height: 100%;                
+            }
+        }
+    }
+}
+}
+
+@media screen and (min-width: 1300px) {
+    .aboutUs{
+        .aboutus-container{    
+            .text-container{
+                font-size: 1.2rem;
+            }
+            .image-container{                
+                object-fit: cover;
+            }
+        }
+    }
+}

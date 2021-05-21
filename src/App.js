@@ -5,13 +5,15 @@ import Landing from './components/Landing'
 import AboutUs from './components/AboutUs'
 import Projects from './components/Projects'
 import ContactUs from './components/ContactUs'
+import Services from './components/Services'
 import './App.scss';
 
 function App() {
   return (    
     <Router>     
       <Landing />
-      <AboutUs />
+      <Services />
+      <AboutUs />      
       <Projects />      
       <ContactUs />      
     </Router>        

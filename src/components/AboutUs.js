@@ -2,7 +2,6 @@ import React from 'react'
 
 const AboutUs = ()=>{
     return (
-
         <div id="aboutUs" className ="aboutUs">            
             <div className = "aboutus-container">
                 <div className = "text-container">

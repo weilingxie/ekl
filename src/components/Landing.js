@@ -32,7 +32,7 @@ const Landing = () => {
                 <div className="title">
                     <div className="landing-title-container">
                         <p className="landing-title">EKL Kitchen</p>                
-                        <p className="landing-subtitle">Slogon</p>
+                        <p className="landing-subtitle">High Quality, Craftsmanship Spirit Powered</p>
                     </div>
                 </div>               
             </div>
