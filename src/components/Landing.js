@@ -18,7 +18,8 @@ const Landing = () => (
                 </div>
             </div>
             <div className="landing-right">
-                <LandingCarousel 
+                <LandingCarousel
+                section="Landing" 
                 image1Uri={`${BaseImageUri}Image1.jpg`} 
                 image2Uri={`${BaseImageUri}Image2.jpg`} 
                 image3Uri={`${BaseImageUri}Image3.jpg`} 

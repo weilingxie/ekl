@@ -20,6 +20,7 @@ const Projects = () => {
             </div>
             <div className="projects-right">
                 <Carousel 
+                section="Projects"
                 image1Uri={`${BaseImageUri}Image1.jpg`} 
                 image2Uri={`${BaseImageUri}Image2.jpg`} 
                 image3Uri={`${BaseImageUri}Image3.jpg`} 

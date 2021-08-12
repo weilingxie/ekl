@@ -4,7 +4,7 @@ import ContactInfo from './Footer/ContactInfo'
 import ContactForm from './Footer/ContactForm'
 
 const ContactUs = () => (        
-    <div id="contactUs" className="contactUs">
+    <div id="contactUs" className="section contactUs">
         <div className="info-container">
             <h1 className="section-title">CONTACT US</h1>
             <ContactInfo />
