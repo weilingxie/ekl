@@ -3,7 +3,7 @@ import Logo from '../images/EKL-logo.svg'
 
 const Navbar = () => {  
     return (        
-          <div id="navbar" className="navbar"> 
+          <div id="navbar" className="section navbar"> 
             <img className="logo" src={Logo} alt="EKL Kitchens" />
             <input type="checkbox" id="nav-toggle" className="nav-toggle"></input>                                                   
             <nav className="navbar-btns">

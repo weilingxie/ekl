@@ -1,29 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Carousel from './Elements/Carousel'
 
-const Projects = ()=>{
-    return (
+const Projects = () => {
+    const defaultType = 'Kitchen'
+    const [type,changeType] = useState(defaultType);
+    let BaseImageUri = `${process.env.PUBLIC_URL}/images/${type}/`
+    console.log(`Current Type = ${type}`)
 
-        <div id="projects" className ="projects">            
-            <div className = "projects-container">
-                <div className = "text-container">
-                    <h1 className="projects-title">PROJECTS</h1>
-                    <a className="projects-more" href="/home">More</a>
-                </div>
-                <div className="projects-image projects-image1">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage1.jpg`} alt="projectImage" />                    
-                </div>
-                <div className="projects-image projects-image2">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage2.jpg`} alt="projectImage" />                    
-                </div>                
-                <div className ="projects-image projects-image3">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage3.jpg`} alt="projectImage" />                    
-                </div>
-                <div className="projects-image projects-image4">
-                    <img className="projectsimage" src={`${process.env.PUBLIC_URL}/images/ProjectImage4.png`} alt="projectImage" />                    
-                </div>
+    return (        
+        <div id="projects" className="section projects">
+            <div className="projects-left">
+                <h1 className="projects-title section-title">Projects</h1>
+                <ul className="projects-left-type list-group">
+                    <li className={`projects-type list-group-item ${type==="Kitchen" ? "active" : null}`} id="Kitchen" onClick={e=>changeType(e.target.id)}>Kitchen</li>
+                    <li className={`projects-type list-group-item ${type==="Vanity" ? "active" : null}`} id="Vanity" onClick={e=>changeType(e.target.id)}>Vanity</li>
+                    <li className={`projects-type list-group-item ${type==="Wardrobe" ? "active" : null}`} id="Wardrobe" onClick={e=>changeType(e.target.id)}>Wardrobe</li>
+                    <li className={`projects-type list-group-item ${type==="Living" ? "active" : null}`} id="Living" onClick={e=>changeType(e.target.id)}>Living</li>
+                </ul>
             </div>
-        </div>
+            <div className="projects-right">
+                <Carousel 
+                image1Uri={`${BaseImageUri}Image1.jpg`} 
+                image2Uri={`${BaseImageUri}Image2.jpg`} 
+                image3Uri={`${BaseImageUri}Image3.jpg`} 
+                />
+            </div>
+        </div>         
     )
-} 
+}
 
-export default Projects 
+export default Projects
