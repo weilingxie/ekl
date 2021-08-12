@@ -106,11 +106,17 @@
         .info-container {
             margin-top: 0;
             width: 30%;
-        }
+
+            .item-phone-text {
+                color: var(--color-red);
+                font-weight: bold;
+            }
+        }        
         .contactUs-container{
-            width: 30%;
+            width: 30%;            
         }
         .map{
+            // color: unset;
             width: 30%;
             // height: 100px;
         }
