@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 
+import Navbar from './components/Navbar'
 import Landing from './components/Landing'
 import AboutUs from './components/AboutUs'
 import Projects from './components/Projects'
@@ -10,7 +11,8 @@ import './App.scss';
 
 function App() {
   return (    
-    <Router>     
+    <Router>
+      <Navbar />
       <Landing />
       <Services />
       <AboutUs />      

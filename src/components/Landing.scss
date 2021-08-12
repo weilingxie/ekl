@@ -3,15 +3,6 @@
 .landing {
     overflow: hidden;
     height: 100vh;
-    // background-image: url("%PUBLIC_URL%/images/BackgroundImage.jpg");
-    
-    @supports (background-blend-mode : multiply ) {
-        background-image: url('../BackgroundImage.jpg'), radial-gradient(#4B4B4B,rgb(194, 193, 193));
-        background-blend-mode: multiply;
-    }
-    background-position: center center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover ; /* Resize the background image to cover the entire container */
 
     .logo {
         width: 230px;
@@ -34,7 +25,7 @@
             
         }
         .landing-title-container{  
-            color: white;
+            color: var(--color-darkgrey);
             
             .landing-title{      
                 font-size: 5rem;
