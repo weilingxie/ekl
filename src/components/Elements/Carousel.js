@@ -9,13 +9,13 @@ const Carousel = ({ section, image1Uri, image2Uri, image3Uri }) => (
         </div>
         <div className="carousel-inner">
             <div className="carousel-item active">
-                <img src={image1Uri} className="d-block w-100" alt="landing-image" />
+                <img src={image1Uri} className="d-block w-100" alt="landing-slide1" />
             </div>
             <div className="carousel-item">
-                <img src={image2Uri} className="d-block w-100" alt="landing-image" />
+                <img src={image2Uri} className="d-block w-100" alt="landing-slide2" />
             </div>
             <div className="carousel-item">
-                <img src={image3Uri} className="d-block w-100" alt="landing-image" />
+                <img src={image3Uri} className="d-block w-100" alt="landing-slide3" />
             </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target={`#${section}CarouselIndicators`} data-bs-slide="prev">

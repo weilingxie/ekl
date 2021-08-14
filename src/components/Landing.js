@@ -1,6 +1,5 @@
 import React from 'react'
 import LandingCarousel from './Elements/Carousel'
-const Config = require('../config.json') 
 
 const BaseImageUri = `${process.env.PUBLIC_URL}/images/Landing/`
 

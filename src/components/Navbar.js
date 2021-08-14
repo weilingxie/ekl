@@ -3,9 +3,9 @@ import Logo from '../images/EKL-logo.svg'
 
 const Navbar = () => {  
     return (        
-          <div id="navbar" className="section navbar"> 
+          <div id="navbar" className="navbar"> 
             <img className="logo" src={Logo} alt="EKL Kitchens" />
-            <input type="checkbox" id="nav-toggle" className="nav-toggle"></input>                                                   
+            <input type="checkbox" id="nav-toggle" className="nav-toggle" />
             <nav className="navbar-btns">
                 <ul>
                     <li className="navbar-btn navbar-home" >
@@ -25,7 +25,9 @@ const Navbar = () => {
                     </li>
                 </ul>                  
             </nav>        
-            <label htmlFor="nav-toggle"><i className="fas fa-bars fa-2x nav-toggle-label" ></i></label>           
+            <label for="nav-toggle" class="nav-toggle-label">
+              <span></span>
+            </label>
           </div>
     )
 }

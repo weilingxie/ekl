@@ -2,80 +2,146 @@
 
 .navbar {
     background-color: var(--color-darkgrey);
-    // padding: 0.5rem;
-    color: var(--color-additional);
     text-align: center;
+    z-index:999;
     width: 100%;
 
     img {
-         margin-left: 0.5em;
-         height: 8em;
-         margin-top: 0px;
-         margin-bottom: 0px;
-         padding-top: 0px;
-         padding-bottom: 0px;
+        margin-left: 5em;
+        height: 8em;
     }
 
     .nav-toggle {
-        display: none;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;        
     }
 
-    .nav-toggle:checked ~ nav {
-        transform: scale(1,1);
-    }
-
-    .nav-toggle:checked ~ nav li {
-        opacity: 1;
-        transition: opacity 250ms ease-in-out 250ms;
+    .nav-toggle:focus ~ .nav-toggle-label {
+        outline: 1px solid white;
     }
 
     .nav-toggle-label {
-        position: absolute;
-        right: 0.2em;
-        top:0;
-        margin-right: 1em;
-        margin-top: 1em;        
+        position: absolute;        
+        top: 0;
+        left: 0;
+        margin-left: 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
-    .navbar-btns {
-        position: absolute;
-        z-index: 999;
-        text-align: left;
-        background-color: var(--color-darkgrey);
-        color: var(--color-additional);
-        width: 100%;
-        transform: scale(1,0);
-        transform-origin: top;
-        transition: transform 300ms ease-in-out;
-        
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+    bottom: 7px;
+    }
+
+    .nav-toggle-label span::after {
+    top: 7px;
+    }
+
+    nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--color-darkgrey);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+
         ul {
             margin: 0;
             padding: 0;
             list-style: none;
 
             li {
-                margin: 0.75em;
-                text-decoration: none;                
-                opacity: 0;
-                transition: opacity 150ms ease-in-out;
+                margin-bottom: 1em;
+                margin-left: 1em;
 
                 a {
-                    color: var(--color-addtional);
+                    color: white;
                     text-decoration: none;
-
-                    &:hover {
-                        color: var(--color-red);
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    opacity: 0;
+                    transition: opacity 150ms ease-in-out;
                     }
+                
+                    nav a:hover {
+                    color: var(--color-red);
                 }
             }
         }
-
-        .navbar-btn {
-            &:hover {
-                color: var(--color-red);
-            }
-         }         
     }
+
+    .nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+    }
+
+    .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+    }
+    
+    
+
+    // .navbar-btns {
+    //     position: absolute;
+    //     z-index: 999;
+    //     text-align: left;
+    //     background-color: var(--color-darkgrey);
+    //     color: var(--color-additional);
+    //     width: 100%;
+    //     transform: scale(1,0);
+    //     transform-origin: top;
+    //     transition: transform 300ms ease-in-out;
+        
+    //     ul {
+    //         margin: 0;
+    //         padding: 0;
+    //         list-style: none;
+
+    //         li {
+    //             margin: 0.75em;
+    //             text-decoration: none;                
+    //             opacity: 0;
+    //             transition: opacity 150ms ease-in-out;
+
+    //             a {
+    //                 color: var(--color-addtional);
+    //                 text-decoration: none;
+
+    //                 &:hover {
+    //                     color: var(--color-red);
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     .navbar-btn {
+    //         &:hover {
+    //             color: var(--color-red);
+    //         }
+    //      }         
+    // }
 }
 
 @media screen and (min-width: 945px) {
