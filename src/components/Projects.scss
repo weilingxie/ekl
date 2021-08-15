@@ -8,9 +8,12 @@
 
     .projects-left {        
         width: 100%;
+        
+        .projects-title{
+            color: white;
+        }
 
-        ul {
-                            
+        ul {                            
             .active{
                 background-color: var(--color-red) !important;
                 color: var(--color-additional) !important;
@@ -37,10 +40,6 @@
             align-items: center;
             justify-content: center;
             padding-bottom: 3rem;
-
-            .projects-title {
-                color: var(--color-additional);
-            }
             
             ul {
                 width: 90%;
