@@ -5,7 +5,6 @@ const Projects = () => {
     const defaultType = 'Kitchen'
     const [type,changeType] = useState(defaultType);
     let BaseImageUri = `${process.env.PUBLIC_URL}/images/${type}/`
-    console.log(`Current Type = ${type}`)
 
     return (        
         <div id="projects" className="section projects">
