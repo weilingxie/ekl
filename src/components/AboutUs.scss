@@ -1,48 +1,52 @@
 @import "./design-tokens/css-variables.scss";
 
 .aboutUs {
-    background: var(--color-addtional);
-    color: var(--color-primary);
-    text-align: center;
+  background: var(--color-addtional);
+  color: var(--color-primary);
+  text-align: center;
 
-    .aboutus-container{
-        width: 90%;
-        margin:auto;
+  .aboutus-container {
+    width: 90%;
+    margin: auto;
 
-        .text-container{
-            font-size: 0.5 rem;
-            text-align: left;            
-        }
-    }    
+    .text-container {
+      font-size: 0.5 rem;
+      text-align: left;
+
+      .about-title {
+        color: var(--color-secondary);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    .aboutUs{
-        padding: 0;
-        margin: 0;
-        .aboutus-container{    
-            display: flex;
-            justify-content: space-between;
-            align-items:center;
-            width: 100%;
-            padding: 0;
-            margin: 0;
+  .aboutUs {
+    padding: 0;
+    margin: 0;
+    .aboutus-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
 
-            .text-container{
-                width:43%;
-                margin-left: 1em;
-                line-height: 1.3em;
-                font-size: 1rem;            
-                p{
-                    margin-top: 1em;
-                }
-            }
-            .image-container{                
-                width: 55%;
-                img{
-                    width: 100%;       
-                }
-            }
+      .text-container {
+        width: 43%;
+        margin-left: 1em;
+        line-height: 1.3em;
+        font-size: 1rem;
+        p {
+          margin-top: 1em;
         }
+      }
+      .image-container {
+        width: 55%;
+        img {
+          width: 100%;
+        }
+      }
     }
+  }
 }
