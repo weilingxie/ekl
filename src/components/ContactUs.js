@@ -1,5 +1,4 @@
 import React from "react";
-import MapSection from "./map/Map";
 import ContactInfo from "./Footer/ContactInfo";
 import ContactForm from "./Footer/ContactForm";
 
@@ -13,7 +12,7 @@ const ContactUs = () => (
     </div>
     <ContactForm />
     <div className="map">
-      <img src={`${BaseImageUri}Map.png`} />
+      <img src={`${BaseImageUri}Map.png`} alt="address on map" />
     </div>
   </div>
 );

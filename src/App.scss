@@ -4,29 +4,30 @@
 @import "./components/Landing.scss";
 @import "./components/AboutUs.scss";
 @import "./components/ContactUs.scss";
-@import "./components/map/map.scss";
 @import "./components/Projects.scss";
 @import "./components/Services.scss";
 
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .section {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 .section-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0.5em 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.5em 0;
 }
